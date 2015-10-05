@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        $(document).ready(function () {
+            var stickyNavTop = $('.nav').offset().top;
+
+            var stickyNav = function () {
+                var scrollTop = $(window).scrollTop();
+
+                if (scrollTop > stickyNavTop) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 header">
+                <div class="logo">
+                    <img src="images/logo.png" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="padding:0; margin:0">
+                <div class="nav">
+                    <ol>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">My Games</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Legend of the Fallen Warrior</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">My apps</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Solar System</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Calculators</a>
+                        </li>
+                        <li>
+                            <a href="#">About me</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lacinia tellus.
+                    Ut magna elit, porttitor sed vulputate vitae, sodales et eros.
+                    Nam ac est vitae metus efficitur tempus lacinia sit amet leo. Mauris aliquet eleifend eros.
+                    In at sollicitudin purus. Suspendisse eu dignissim tellus, vel sodales mi.
+                    Pellentesque dignissim nisl sapien, non posuere lacus vulputate ac.
+                    Sed eget quam mattis libero consectetur egestas sed id ligula.
+                    Vivamus id eros elit. Aliquam a tortor risus. Integer bibendum purus vel cursus tempus.
+                </p>
+                <p>
+                    Vestibulum aliquam nulla vitae orci sollicitudin tincidunt non at velit.
+                    Sed ac sodales sapien, id pulvinar arcu. In mi elit, varius non massa sed, facilisis maximus augue.
+                    Pellentesque pulvinar consectetur blandit.
+                    Etiam gravida justo vel lectus accumsan, a blandit orci tristique.
+                    Donec leo odio, tempus et rutrum ut, semper at sapien.
+                    Etiam semper maximus blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+                <p>
+                    Donec consequat vitae lorem vitae posuere.
+                    Vestibulum vulputate imperdiet dapibus.
+                    Aenean rutrum viverra consectetur.
+                    Maecenas vehicula risus ut nisi sodales mattis.
+                    Nullam nisi turpis, rutrum non vulputate in, tristique vel nibh.
+                    Suspendisse tempus lacus quis justo vestibulum aliquet eu in lacus.
+                    Nam eget auctor metus, ac volutpat nunc.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </p>
+                <p>
+                    In mattis dapibus eros, et mattis magna cursus non.
+                    Integer placerat ut sapien id facilisis.
+                    Donec vitae ultricies tellus.
+                    Aliquam semper ex a ipsum scelerisque dictum.
+                    Suspendisse potenti. Duis risus massa, vulputate non sapien vel, euismod viverra nunc.
+                    Integer convallis mi et eros maximus fringilla.
+                    Curabitur ac accumsan elit.
+                </p>
+                <p>
+                    Quisque a nisi dui. Mauris porta, velit et fringilla blandit, mauris mi varius diam, quis aliquam nulla quam eu ligula.
+                    Aenean ultricies aliquam euismod. Aenean id lacinia augue.
+                    Proin feugiat efficitur velit, id porttitor lorem dictum in.
+                    Etiam viverra ultrices auctor. Sed nisi purus, sagittis a metus tristique, sodales commodo est.
+                </p>
+                <div class="socials">
+                    <div class="fb col-xs-2"><i class="icon-facebook"></i></div>
+                    <div class="gplus col-xs-2"><i class="icon-gplus"></i></div>
+                    <div class="reddit col-xs-2"><i class="icon-reddit"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="footer">
+                    Marrow Tap &copy; 2015
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
